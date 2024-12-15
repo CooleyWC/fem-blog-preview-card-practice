@@ -31,6 +31,12 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    box-shadow: 8px 8px 0 black;
+
+    @media screen and (min-width: 600px) {
+        width: 384px;
+        height: 522px;
+    };
 }
 
 .card img {
@@ -38,6 +44,13 @@ body {
     width: 279px;
     margin: 24px auto;
     display: block;
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 600px) {
+        width: 336px;
+    };
+
 }
 
 .text-area {
@@ -63,11 +76,20 @@ body {
     font-weight: 800;
 }
 
+.main-title:hover {
+    cursor: pointer;
+    color: var(--clr--yellow);
+}
+
 .text-area .description {
     margin-top: 12px;
     line-height: 150%;
     font-size: 14px;
     font-weight: 200;
+
+    @media screen and (min-width: 600px) {
+        font-size: 16px;
+    };
 }
 
 .profile {
@@ -77,12 +99,16 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (min-width: 600px) {
+        margin-top: 12px;
+    };
 }
 
 .profile img {
     
     display: inline-block;
-    width: 1rem;
+    width: 0.8rem;
     flex-grow: 1;
 }
 
@@ -93,3 +119,6 @@ body {
     padding-left: 10px;
     font-weight: 700;
 }
+
+
+
